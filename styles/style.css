@@ -31,7 +31,7 @@ body{
 .container{
     display: flex;
     align-items: center;
-    background-image: url(/images/euro1.jpg);
+    background-image: url(../images/euro1.jpg);
     background-size:cover;
     background-position: center;
     
@@ -149,7 +149,7 @@ body{
 
     display: flex;
     flex-direction: column;
-    background-image: url(/images/eurobg.jpg);
+    background-image: url(../images/eurobg.jpg);
     background-size: cover;
 }
 
@@ -179,7 +179,7 @@ body{
 
 .signup{
     margin-top: -1%;
-    background-image: url(/images/bg.jpg);
+    background-image: url(../images/bg.jpg);
     background-size: cover;
 }
 
@@ -224,7 +224,7 @@ body{
     flex-direction: column;
     align-items: center;
      /* margin: 5% 5% 5% 5%; */
-     background-image: url(/images/eurobg.jpg);
+     background-image: url(../images/eurobg.jpg);
 }
 .footer img{
     
