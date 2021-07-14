@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;;
+    /* background-color: rgb(47, 47, 47); */
+    color: rgb(226, 226, 226);
+    margin: 0%;
+}
+
+.whitish{
+    color: rgb(221, 228, 255);
+    font-size: 70px;
+  }
+
+.redish{
+    color: rgb(241, 0, 0);
+    font-size: 70px;
+  }
+
+.gs{
+    color: #E02C6D;;
+    font-size: 30px;
+    text-align: center;
+}
+
+.redsmall{
+    color: #E02C6D;;
+    font-size: 40px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    background-image: url(/images/euro1.jpg);
+    background-size:cover;
+    background-position: center;
+    
+}
+
+.welcome{
+    margin-left: 6%;
+    margin-top: 10%;
+    /* padding: 80px; */
+    padding: 2%;
+    width: 40%;
+    height: 800px;
+    text-align: justify;
+    float: left;
+}
+
+.click{
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(#E02C6D,#ffb1ce);
+    border-radius: 15px;
+    margin-top: 2%;
+    padding: 20px 40px;
+}
+
+.click2{
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(#E02C6D,#fa3c3c);
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+
+.click:hover,.click2:hover{
+    background: #ff0000;
+    color: rgb(218, 218, 218);
+    box-sizing: border-box;
+  }
+
+
+
+.euro-logo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25%;
+    width:60%;
+    height: 60%;
+
+    
+}
+
+.euro-logo:hover{ 
+    transform: scale(1.3);
+    transition: transform 2s ease-in-out;
+}
+
+/* player lists */
+
+.playercontainer{
+    background-color: rgb(216, 216, 216);
+    /* width: 870px; */
+    padding: 30px;
+    margin-top: 21px;
+   
+
+
+}
+.topplayer{
+    margin-bottom: 30px;
+}
+
+.tptitle{
+    color: #E02C6D;
+    font-size: 48px;
+    margin-top: 3px;
+    text-align: center;
+
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 30px;
+
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:auto ;
+    width: 330px;
+    box-shadow: 5px 5px 20px rgba(82, 82, 82, 0.479);
+    margin-left: 15%;
+}
+
+.playerimage img{
+    padding-top: 50px;
+    width: 300px;
+    height: 256px;
+}
+
+.playerinfo{
+    margin-left: 0px;
+    color: rgb(85, 84, 84);
+    font-size: 20px;
+}
+
+
+/* Live Match information */
+
+.liveinfo{
+
+    display: flex;
+    flex-direction: column;
+    background-image: url(/images/eurobg.jpg);
+    background-size: cover;
+}
+
+.liveimage{
+    margin: 12%;
+    
+}
+
+.liveimage img{
+    position: absolute;
+    width: 567px;
+    height: 420px;
+    left: 50%;
+
+}
+
+.livedetail{
+    padding-bottom: 10%;
+    margin-top: -7%;
+    margin-left: 4%;
+    width: 40%;
+    text-align: justify;
+}
+
+
+/* form for newsletter  */
+
+.signup{
+    margin-top: -1%;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+}
+
+.signupform{
+    padding-top: 10%;
+
+}
+
+.text{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sub{
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: white;
+    display: inline-block;
+    border: 1px solid  rgb(255, 0, 0);
+    background-image: linear-gradient(rgb(203, 9, 9),rgb(255, 167, 167));
+    border-radius: 4px;
+    box-sizing:border-box;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* footer  */
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /* margin: 5% 5% 5% 5%; */
+     background-image: url(/images/eurobg.jpg);
+}
+.footer img{
+    
+    height:200px;
+    width: 200px;
+    /* display: block; */
+    align-items: center;
+    
+  
+}
+.footer-icons{
+font-size: 32px;
+text-align: center;
+
+}
+
+.footer-icons a{
+    color: rgb(235, 235, 235);
+    padding-left: 20px;
+}
+
+
+/* media query for mobile  */
+
+@media only screen and (max-width:688px) {
+    .mquery{
+        width: 100%;
+    }
+
+    .click2,.click,.footer{
+        display: flex;
+        align-items: center;
+
+    }
+
+    .container{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .euro-logo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60%;
+        width:40%;
+        height:40%;
+    
+        
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+   .player{
+       align-items: center;
+       margin: 3%;
+   }
+
+   .liveimage img{
+       width: 100%;
+       margin: auto;
+       padding: auto;
+       display: flex;
+       left:0;
+       position: relative;
+       align-items: center;
+       flex-direction: column;
+   }
+
+   /* .footer img{
+       width: 10%;
+       height: 10%;
+   } */
+   .footer-icons{
+    font-size: 10px;
+    text-align: center;
+    }
+    
+}
+
